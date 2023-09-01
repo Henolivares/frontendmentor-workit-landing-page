@@ -1,0 +1,67 @@
+@use '../functions/functions' as *;
+
+:root {
+  // colors
+  --clr-primary: hsl(273, 85%, 13%);
+  --clr-accent: hsl(150, 100%, 63%);
+  --clr-secondary: hsl(271, 12%, 34%);
+  --clr-ghost-white: hsl(274, 100%, 99%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  // fonts
+  --ff-primary: 'Fraunces', serif;
+  --ff-secondary: 'Manrope', sans-serif;
+
+  --fs-l: #{rem(80)};
+  --fs-m: #{rem(56)};
+  --fs-s: #{rem(32)};
+  --fs-body: #{rem(18)};
+
+  --fw-heading: 600;
+  --fw--text: 400;
+
+  --lh-l: #{rem(80)};
+  --lh-m: #{rem(64)};
+  --lh-s: #{rem(40)};
+  --lh-body: #{rem(32)};
+
+  @media (max-width: 48.5em) {
+    //768
+    --fs-l: #{rem(60)};
+    --fs-m: #{rem(48)};
+    --fs-s: #{rem(28)};
+    --fs-body: #{rem(16)};
+    --lh-body: #{rem(28)};
+
+    --lh-l: #{rem(60)};
+    --lh-m: #{rem(56)};
+    --lh-s: #{rem(36)};
+  }
+
+  @media (max-width: 23.5em) {
+    // 375.5
+    --fs-l: #{rem(46)};
+    --fs-m: #{rem(32)};
+    // --fs-s: #{rem(28)};
+    // --fs-body: #{rem(16)};
+    // --lh-body: #{rem(28)};
+
+    --lh-l: #{rem(50)};
+    --lh-m: #{rem(45)};
+    // --lh-s: #{rem(36)};/
+  }
+
+  --ff-heading: var(--ff-primary);
+  --ff-body: var(--ff-secondary);
+
+  --fs-heading-l: var(--fs-l);
+  --fs-heading-m: var(--fs-m);
+  --fs-heading-s: var(--fs-s);
+
+  --fw-heading: var(--fw-heading);
+  --fw-body: var(--fw--text);
+
+  --lh-heading-l: var(--lh-l);
+  --lh-heading-m: var(--lh-heading-m);
+  --lh-heading-s: var(--lh-heading-s);
+}

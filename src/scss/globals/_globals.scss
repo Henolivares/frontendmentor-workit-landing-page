@@ -1,0 +1,108 @@
+@use '../functions/functions' as *;
+
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  // font: inherit;
+}
+
+/* min body height */
+
+body {
+  min-height: 100vh;
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// utility classes
+
+.container {
+  width: min(91%, rem(1120));
+  margin-inline: auto;
+}
+
+.heading-l,
+.heading-m,
+.heading.s {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-heading);
+}
+
+.heading-l {
+  font-size: var(--fs-heading-l);
+  line-height: var(--lh-heading-l);
+}
+
+.heading-m {
+  font-size: var(--fs-heading-m);
+  line-height: var(--lh-heading-m);
+}
+
+.heading-s {
+  font-size: var(--fs-heading-s);
+  line-height: var(--lh-heading-s);
+}
+
+.span-decoration {
+  border-bottom: 2px solid var(--clr-accent);
+}
+
+.button[data-type='primary'] {
+  border: 1px solid var(--clr-accent);
+  outline: none;
+  background-color: var(--clr-accent);
+  padding: 1em 2em;
+  color: var(--clr-primary);
+  font-weight: bold;
+  border-radius: 2px;
+  font-size: var(--fs-body);
+}
+
+.button[data-type='primary']:hover,
+.button[data-type='primary']:active,
+.button[data-type='primary']:focus {
+  color: var(--clr-accent);
+  background-color: transparent;
+}
+
+.button[data-type='secondary'] {
+  font-size: var(--fs-body);
+  color: var(--clr-white);
+  padding-block-end: 4px;
+  border-bottom: 2px solid var(--clr-accent);
+}
+
+.button[data-type='secondary']:hover,
+.button[data-type='secondary']:active,
+.button[data-type='secondary']:focus {
+  color: var(--clr-accent);
+}

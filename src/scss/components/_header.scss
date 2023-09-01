@@ -1,0 +1,16 @@
+@use '../functions/functions' as *;
+
+.header {
+  background-color: var(--clr-primary);
+  --m-top: #{rem(32)};
+
+  &__navigation {
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding-block: var(--m-top);
+  }
+}

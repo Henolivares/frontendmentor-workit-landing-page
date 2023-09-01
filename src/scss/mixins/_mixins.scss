@@ -1,0 +1,27 @@
+@mixin minWidth($breakpoint) {
+  @if $breakpoint == desktop {
+    @media (min-width: 70em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+}
+
+@mixin maxWidth($breakpoint) {
+  @if $breakpoint == desktop {
+    @media (max-width: 70.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media (max-width: 48.5em) {
+      @content;
+    }
+  }
+}

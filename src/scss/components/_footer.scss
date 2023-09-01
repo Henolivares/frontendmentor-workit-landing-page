@@ -1,0 +1,16 @@
+@use '../functions/functions' as *;
+
+.footer {
+  padding-block: rem(160);
+
+  &__content {
+    display: grid;
+    justify-items: center;
+    gap: rem(40);
+  }
+
+  &__list-socials {
+    display: flex;
+    gap: rem(30);
+  }
+}
