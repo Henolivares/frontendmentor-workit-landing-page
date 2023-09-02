@@ -56,23 +56,25 @@
     &::before {
       content: '';
       position: absolute;
-      background-image: url('../../../assets/images/bg-pattern-1.svg');
+      background-image: url('./bg-pattern-1.svg');
       background-repeat: no-repeat;
-      width: 270px;
+      width: 320px;
       aspect-ratio: 1 / 1;
       top: -5%;
       left: -22%;
+      z-index: 2;
     }
 
     &::after {
       content: '';
       position: absolute;
-      background-image: url('../../../assets/images/bg-pattern-2.svg');
+      background-image: url('./bg-pattern-2.svg');
       background-repeat: no-repeat;
-      width: 141px;
+      width: 170px;
       aspect-ratio: 1 / 1;
       top: 30%;
       right: -12%;
+      z-index: 222;
     }
   }
 }

@@ -1,70 +1,6 @@
 @use '../functions/functions' as *;
 @use '../mixins/mixins' as *;
 
-// .founder {
-//   padding-block-start: rem(230);
-
-//   & .founder__content {
-//     display: grid;
-//     grid-template-rows: 230px 1fr;
-//     flex-direction: column;
-//     justify-items: center;
-//     .founder__image {
-//       width: 280px;
-//     }
-//     @media (min-width: 70em) {
-//       & .founder__image {
-//         width: 477px;
-//       }
-//     }
-
-//     .founder__text {
-//       color: var(--clr-white);
-//       background-color: var(--clr-primary);
-//       padding: min(8vw, rem(60));
-//       text-align: center;
-//       display: grid;
-//       gap: rem(30);
-//       justify-items: center;
-//     }
-//   }
-//   @media (min-width: 48em) {
-//     & .founder__content {
-//       grid-template-columns: max-content max-content;
-//       grid-template-rows: 8fr 1fr;
-//       align-items: start;
-//       position: relative;
-
-//       & .founder__image {
-//         grid-column: 1 / 2;
-//       }
-
-//       & .founder__text {
-//         position: absolute;
-//         width: 65%;
-//         right: 0;
-//         bottom: 0;
-//         text-align: left;
-//         justify-items: start;
-//         align-self: end;
-//       }
-//     }
-//   }
-// }
-
-// @media (min-width: 70em) {
-//   .founder__text::before {
-//     content: '';
-//     background-image: url('../../../assets/images/bg-pattern-1.svg');
-//     background-repeat: no-repeat;
-//     width: 341px;
-//     aspect-ratio: 1 / 1;
-//     position: absolute;
-//     top: 200px;
-//     right: 0;
-//   }
-// }
-
 .founder {
   padding-block-start: rem(180);
 
@@ -128,13 +64,13 @@
 
     &__text::before {
       content: '';
-      background-image: url('../../../assets/images/bg-pattern-1.svg');
+      background-image: url('./bg-pattern-1.svg');
       background-repeat: no-repeat;
-      width: 173px;
+      width: 320px;
       aspect-ratio: 1 / 1;
       position: absolute;
-      right: 80px;
-      bottom: -80px;
+      right: 0px;
+      bottom: -200px;
     }
 
     @include minWidth(desktop) {

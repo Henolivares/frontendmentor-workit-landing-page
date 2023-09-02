@@ -42,8 +42,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/workit-landing-page-_FmlFk_eay)
+- Live Site URL: [Add live site URL here](https://henolivares.github.io/frontendmentor-workit-landing-page/)
 
 ## Built with
 
